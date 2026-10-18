@@ -1,0 +1,8 @@
+#!/bin/bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+BIN="$ROOT/Tools/wbctl/.build/debug/wbctl"
+if [[ ! -x "$BIN" ]]; then
+  swift build --package-path "$ROOT/Tools/wbctl" -Xswiftc -warnings-as-errors
+fi
+exec "$BIN" doctor "$@"

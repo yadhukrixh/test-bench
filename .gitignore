@@ -1,0 +1,16 @@
+.DS_Store
+.build/
+DerivedData/
+*.app
+Spikes/.venv/
+Spikes/gen/
+Spikes/results/
+Spikes/s2_sck
+Spikes/s7_vision
+Spikes/SCKCapture.app/
+**/build/
+**/.dart_tool/
+**/.flutter-plugins-dependencies
+**/Pods/
+*.iml
+.idea/
